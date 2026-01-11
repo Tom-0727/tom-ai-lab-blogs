@@ -1,0 +1,40 @@
+# Hexo Theme Fluid overrides
+# Keep site-level settings in _config.yml, only put theme options here.
+# Guide: https://hexo.fluid-dev.com/docs/guide/
+
+navbar:
+  # Empty uses site title from _config.yml
+  blog_title: ""
+  menu:
+    - { key: "home", link: "/", icon: "iconfont icon-home-fill" }
+    - { key: "archive", link: "/archives/", icon: "iconfont icon-archive-fill" }
+    - { key: "category", link: "/categories/", icon: "iconfont icon-category-fill" }
+    - { key: "tag", link: "/tags/", icon: "iconfont icon-tags-fill" }
+    - { key: "about", link: "/about/", icon: "iconfont icon-user-fill" }
+
+index:
+  banner_img: /img/default.png
+  banner_img_height: 100
+  banner_mask_alpha: 0.3
+  slogan:
+    enable: true
+    # Empty uses subtitle from _config.yml
+    text: ""
+
+about:
+  enable: true
+  banner_img: /img/default.png
+  banner_img_height: 60
+  banner_mask_alpha: 0.3
+  avatar: /img/avatar.png
+  name: ""
+  intro: ""
+  icons:
+    - { class: "iconfont icon-github-fill", link: "https://github.com", tip: "GitHub" }
+
+footer:
+  content: '
+    <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a>
+    <i class="iconfont icon-love"></i>
+    <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a>
+  '
