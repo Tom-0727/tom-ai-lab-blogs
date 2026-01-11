@@ -8,7 +8,7 @@
 * Keywords (comma-separated): **AI Agent, LLM, ResearcherZero, Python, Artificial Intelligence, Personal Knowledge Management**
 * Default language (e.g. zh-CN, en): **en**
 * Timezone (e.g. Asia/Shanghai): **America/Los_Angeles**
-* Site URL (production): *(这里填你 Vercel 生成的域名，如 [https://tom-ai-lab.vercel.app](https://www.google.com/search?q=https://tom-ai-lab.vercel.app))*
+* Site URL (production): https://tom-ai-lab-blogs.vercel.app/
 
 ## Navbar
 
@@ -24,7 +24,7 @@
 
 ## Home Banner
 
-* Banner image path or URL: **[https://source.unsplash.com/random/1920x1080?robot,technology,future](https://www.google.com/search?q=https://source.unsplash.com/random/1920x1080%3Frobot,technology,future)** *(推荐找一张有“未来感”但干净的图，建议上传到你自己的 source/img 目录)*
+* Banner image path or URL: source/img/tom-and-bots.jpeg
 * Banner height (0-100): **100** *(全屏展示，更有冲击力)*
 * Banner mask opacity (0-1): **0.3**
 * Home slogan (leave blank to use subtitle): **One Man, Many Agents.**
@@ -32,16 +32,16 @@
 ## About Page
 
 * Enable about page (yes/no): **yes**
-* About banner image path or URL: **[https://source.unsplash.com/random/1920x1080?workspace,coding](https://www.google.com/search?q=https://source.unsplash.com/random/1920x1080%3Fworkspace,coding)**
+* About banner image path or URL: source/img/tom-and-bots.jpeg
 * About banner height (0-100): **70**
 * About banner mask opacity (0-1): **0.3**
-* Avatar image path or URL: *(建议放一张你的头像，或者用 AI 生成一张你和机器人协作的风格化头像)*
+* Avatar image path or URL: source/img/pika-ava.jpeg
 * Name: **Tom**
 * Intro (1-2 sentences): **正在构建属于我的 AI 员工团队。目前专注于 ResearcherZero 的开发，致力于解决信息过载与深度认知的挑战。**
 * Social icons (icon class + link + label):
-1. **fab fa-github** | *(你的GitHub链接)* | **GitHub**
-2. **fas fa-envelope** | *(mailto:你的邮箱)* | **Email**
-3. **fab fa-twitter** | *(你的Twitter/X链接)* | **Twitter**
+1. **fab fa-github** | https://github.com/Tom-0727 | **GitHub**
+2. **fas fa-envelope** | 2594511615@qq.com | **Email**
+3. **fab fa-twitter** | https://x.com/TomTheBig77 | **Twitter**
 
 
 

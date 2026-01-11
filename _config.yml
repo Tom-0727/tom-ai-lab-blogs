@@ -3,17 +3,17 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Tom's Blog
-subtitle: ''
-description: ''
-keywords:
+title: Tom's AI Lab
+subtitle: 'Building My Own Digital Workforce'
+description: 'A personal log of building AI employees to solve real-world research and engineering problems. Exploring Agent Memory, Cognition, and Human-AI collaboration.'
+keywords: AI Agent, LLM, ResearcherZero, Python, Artificial Intelligence, Personal Knowledge Management
 author: Tom
 language: en
-timezone: ''
+timezone: 'America/Los_Angeles'
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: https://tom-blogs.vercel.app/
+url: https://tom-ai-lab-blogs.vercel.app/
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:

@@ -4,13 +4,13 @@
 
 navbar:
   # Empty uses site title from _config.yml
-  blog_title: ""
+  blog_title: "Tom's Lab"
   menu:
-    - { key: "home", link: "/", icon: "iconfont icon-home-fill" }
-    - { key: "archive", link: "/archives/", icon: "iconfont icon-archive-fill" }
-    - { key: "category", link: "/categories/", icon: "iconfont icon-category-fill" }
-    - { key: "tag", link: "/tags/", icon: "iconfont icon-tags-fill" }
-    - { key: "about", link: "/about/", icon: "iconfont icon-user-fill" }
+    - { key: "home", name: "首页", link: "/", icon: "iconfont icon-home-fill" }
+    - { key: "archive", name: "归档", link: "/archives/", icon: "iconfont icon-archive-fill" }
+    - { key: "category", name: "分类", link: "/categories/", icon: "iconfont icon-category-fill" }
+    - { key: "tag", name: "标签", link: "/tags/", icon: "iconfont icon-tags-fill" }
+    - { key: "about", name: "关于", link: "/about/", icon: "iconfont icon-user-fill" }
 
 index:
   banner_img: /img/default.png
@@ -19,22 +19,25 @@ index:
   slogan:
     enable: true
     # Empty uses subtitle from _config.yml
-    text: ""
+    text: "One Man, Many Agents."
 
 about:
   enable: true
   banner_img: /img/default.png
-  banner_img_height: 60
+  banner_img_height: 70
   banner_mask_alpha: 0.3
-  avatar: /img/avatar.png
-  name: ""
-  intro: ""
+  avatar: /img/pika-ava.jpeg
+  name: "Tom"
+  intro: "正在构建属于我的 AI 员工团队。目前专注于 ResearcherZero 的开发，致力于解决信息过载与深度认知的挑战。"
   icons:
-    - { class: "iconfont icon-github-fill", link: "https://github.com", tip: "GitHub" }
+    - { class: "fab fa-github", link: "https://github.com/Tom-0727", tip: "GitHub" }
+    - { class: "fas fa-envelope", link: "mailto:2594511615@qq.com", tip: "Email" }
+    - { class: "fab fa-twitter", link: "https://x.com/TomTheBig77", tip: "Twitter" }
 
 footer:
-  content: '
-    <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a>
-    <i class="iconfont icon-love"></i>
-    <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a>
-  '
+  content: "Building in public. Powered by Hexo &amp; Fluid."
+  statistics:
+    enable: true
+    source: "busuanzi"
+  beian:
+    enable: false
