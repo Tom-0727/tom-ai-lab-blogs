@@ -2,9 +2,11 @@
 # Keep site-level settings in _config.yml, only put theme options here.
 # Guide: https://hexo.fluid-dev.com/docs/guide/
 
+favicon: /img/favicon.ico
+
 navbar:
   # Empty uses site title from _config.yml
-  blog_title: "Tom's Lab"
+  blog_title: "Tom's AI Lab"
   menu:
     - { key: "home", name: "首页", link: "/", icon: "iconfont icon-home-fill" }
     - { key: "archive", name: "归档", link: "/archives/", icon: "iconfont icon-archive-fill" }
@@ -26,7 +28,7 @@ about:
   banner_img: /img/default.png
   banner_img_height: 70
   banner_mask_alpha: 0.3
-  avatar: /img/pika-ava.jpeg
+  avatar: /img/tom-ai-lab-ava.jpeg
   name: "Tom"
   intro: "正在构建属于我的 AI 员工团队。目前专注于 ResearcherZero 的开发，致力于解决信息过载与深度认知的挑战。"
   icons:
