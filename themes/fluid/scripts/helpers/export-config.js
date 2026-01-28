@@ -2,7 +2,6 @@
 
 'use strict';
 
-const url = require('url');
 const urlJoin = require('../utils/url-join');
 
 /**
@@ -10,8 +9,14 @@ const urlJoin = require('../utils/url-join');
  */
 hexo.extend.helper.register('export_config', function () {
   let { config, theme, fluid_version } = this;
+  let hostname = config.url;
+  try {
+    hostname = new URL(config.url).hostname || config.url;
+  } catch (err) {
+    // Keep original value if config.url is not a valid absolute URL.
+  }
   const exportConfig = {
-    hostname: url.parse(config.url).hostname || config.url,
+    hostname,
     root: config.root,
     version: fluid_version,
     typing: theme.fun_features.typing,

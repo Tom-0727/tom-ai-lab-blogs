@@ -1,0 +1,98 @@
+:root {
+  --accent-orange: #d4a06a;
+  --accent-mint: #b9d6c1;
+  --accent-lilac: #cbb9d9;
+  --accent-sand: #eadfd3;
+}
+
+/* Softer accent blocks for notes, labels, and folds */
+.note-primary,
+.label-primary,
+.fold-primary {
+  background-color: rgba(203, 185, 217, 0.35);
+  border-color: #b69fc9;
+}
+
+.note-success,
+.label-success,
+.fold-success {
+  background-color: rgba(185, 214, 193, 0.35);
+  border-color: #9dc5a8;
+}
+
+.note-warning,
+.label-warning,
+.fold-warning {
+  background-color: rgba(212, 160, 106, 0.35);
+  border-color: #d19a5f;
+}
+
+.note-info,
+.label-info,
+.fold-info {
+  background-color: rgba(187, 207, 217, 0.35);
+  border-color: #a6bdca;
+}
+
+.note-default,
+.note-secondary,
+.label-default,
+.label-secondary,
+.fold-default,
+.fold-secondary {
+  background-color: rgba(234, 223, 211, 0.4);
+  border-color: #b8a99b;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-user-color-scheme]),
+  [data-user-color-scheme="dark"] {
+    --accent-orange: #c08a5d;
+    --accent-mint: #89a996;
+    --accent-lilac: #9d88b0;
+    --accent-sand: #3a3129;
+  }
+
+  .note-primary,
+  .label-primary,
+  .fold-primary {
+    background-color: rgba(157, 136, 176, 0.22);
+    border-color: #9d88b0;
+  }
+
+  .note-success,
+  .label-success,
+  .fold-success {
+    background-color: rgba(137, 169, 150, 0.22);
+    border-color: #89a996;
+  }
+
+  .note-warning,
+  .label-warning,
+  .fold-warning {
+    background-color: rgba(192, 138, 93, 0.22);
+    border-color: #c08a5d;
+  }
+
+  .note-info,
+  .label-info,
+  .fold-info {
+    background-color: rgba(155, 173, 184, 0.22);
+    border-color: #9badb8;
+  }
+
+  .note-default,
+  .note-secondary,
+  .label-default,
+  .label-secondary,
+  .fold-default,
+  .fold-secondary {
+    background-color: rgba(58, 49, 41, 0.5);
+    border-color: #6f5f52;
+  }
+}
+
+/* Subtle hover accents */
+.tagcloud a:hover {
+  background-color: var(--accent-sand);
+}

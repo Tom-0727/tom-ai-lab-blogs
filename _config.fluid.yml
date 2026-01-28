@@ -8,14 +8,53 @@ navbar:
   # Empty uses site title from _config.yml
   blog_title: "Tom's AI Lab"
   menu:
-    - { key: "home", name: "首页", link: "/", icon: "iconfont icon-home-fill" }
-    - { key: "archive", name: "归档", link: "/archives/", icon: "iconfont icon-archive-fill" }
-    - { key: "category", name: "分类", link: "/categories/", icon: "iconfont icon-category-fill" }
-    - { key: "tag", name: "标签", link: "/tags/", icon: "iconfont icon-tags-fill" }
-    - { key: "about", name: "关于", link: "/about/", icon: "iconfont icon-user-fill" }
+    - { key: "home", name: "Home", link: "/", icon: "iconfont icon-home-fill" }
+    - { key: "archive", name: "Archives", link: "/archives/", icon: "iconfont icon-archive-fill" }
+    - { key: "category", name: "Categories", link: "/categories/", icon: "iconfont icon-category-fill" }
+    - { key: "tag", name: "Tags", link: "/tags/", icon: "iconfont icon-tags-fill" }
+    - { key: "about", name: "About", link: "/about/", icon: "iconfont icon-user-fill" }
+
+color:
+  body_bg_color: "#f4f1ec"
+  body_bg_color_dark: "#1d1a17"
+  navbar_bg_color: "#f7f2ea"
+  navbar_bg_color_dark: "#2a231d"
+  navbar_text_color: "#5a4a3f"
+  navbar_text_color_dark: "#f2eadf"
+  subtitle_color: "#1A1A1A"
+  subtitle_color_dark: "#1A1A1A"
+  text_color: "#4a4037"
+  text_color_dark: "#d4c9bd"
+  sec_text_color: "#7a6f66"
+  sec_text_color_dark: "#b4a79b"
+  board_color: "#faf6f1"
+  board_color_dark: "#25201b"
+  post_text_color: "#4a4037"
+  post_text_color_dark: "#d4c9bd"
+  post_heading_color: "#8a5a3c"
+  post_heading_color_dark: "#d7a57f"
+  post_link_color: "#b06a3c"
+  post_link_color_dark: "#d9a77b"
+  link_hover_color: "#cc8450"
+  link_hover_color_dark: "#e0b089"
+  link_hover_bg_color: "#f1e6da"
+  link_hover_bg_color_dark: "#3a3129"
+  line_color: "#e5dcd2"
+  line_color_dark: "#3f352c"
+  scrollbar_color: "#d4c7bb"
+  scrollbar_color_dark: "#5b4e43"
+  scrollbar_hover_color: "#c3b3a6"
+  scrollbar_hover_color_dark: "#716356"
+  button_bg_color: "#b06a3c"
+  button_bg_color_dark: "#7c4a2e"
+  button_hover_bg_color: "#c98a5a"
+  button_hover_bg_color_dark: "#94613f"
+
+custom_css:
+  - /css/custom.css
 
 index:
-  banner_img: /img/default.png
+  banner_img: /img/blog-background.webp
   banner_img_height: 100
   banner_mask_alpha: 0.3
   slogan:
@@ -23,14 +62,29 @@ index:
     # Empty uses subtitle from _config.yml
     text: "One Man, Many Agents."
 
+archive:
+  banner_img: /img/blog-background.webp
+  banner_img_height: 60
+  banner_mask_alpha: 0.3
+
+category:
+  banner_img: /img/blog-background.webp
+  banner_img_height: 60
+  banner_mask_alpha: 0.3
+
+tag:
+  banner_img: /img/blog-background.webp
+  banner_img_height: 60
+  banner_mask_alpha: 0.3
+
 about:
   enable: true
-  banner_img: /img/default.png
-  banner_img_height: 70
+  banner_img: /img/blog-background.webp
+  banner_img_height: 80
   banner_mask_alpha: 0.3
-  avatar: /img/tom-ai-lab-ava.jpeg
+  avatar: /img/tom-avatar-320.jpg
   name: "Tom"
-  intro: "正在构建属于我的 AI 员工团队。目前专注于 ResearcherZero 的开发，致力于解决信息过载与深度认知的挑战。"
+  intro: "我正在构建一支 AI 员工团队"
   icons:
     - { class: "fab fa-github", link: "https://github.com/Tom-0727", tip: "GitHub" }
     - { class: "fas fa-envelope", link: "mailto:2594511615@qq.com", tip: "Email" }
