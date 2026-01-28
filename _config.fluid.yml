@@ -77,6 +77,11 @@ tag:
   banner_img_height: 60
   banner_mask_alpha: 0.3
 
+post:
+  banner_img: /img/blog-background.webp
+  banner_img_height: 60
+  banner_mask_alpha: 0.3
+
 about:
   enable: true
   banner_img: /img/blog-background.webp
