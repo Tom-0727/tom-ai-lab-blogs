@@ -1,8 +1,8 @@
 ---
-title: ai_employee_share
+title: DeepResearch Agent Demo
 date: 2026-01-09 22:12:21
 tags: 
-categories: [ai-products]
+categories: [other]
 ---
 # 深度调研：AI Employee产品、应用场景与商业模式全解析
 

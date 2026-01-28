@@ -1,7 +1,8 @@
 ---
-title: nichi-share
+title: Market Research Agent Demo
 date: 2026-01-27 21:12:15
-tags:
+tags: 
+categories: [other]
 ---
 # 智能猫用产品利基市场探索：高客单价与低竞争机会分析
 
