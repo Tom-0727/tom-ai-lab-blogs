@@ -3,13 +3,13 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Linfeng's AI Lab
-subtitle: 'Building My Own Digital Workforce'
-description: 'A personal log of building AI employees to solve real-world research and engineering problems. Exploring Agent Memory, Cognition, and Human-AI collaboration.'
+title: Linfeng (Tom) Liu - AI Agent Engineer
+subtitle: 'Building My Digital Workforce'
+description: 'The personal AI Lab of Linfeng Liu (Tom). A log ofbuilding AI employees to solve real-world research and engineering problems. Exploring Agent Memory, Cognition, and Human-AI collaboration.'
 keywords: AI Agent, LLM, ResearcherZero, Artificial Intelligence, Personal Knowledge Management, Self-Evolving Agent
-author: Linfeng
+author: Linfeng (Tom) Liu
 language: en
-timezone: 'America/Los_Angeles'
+timezone: 'Asia/Shanghai'
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'

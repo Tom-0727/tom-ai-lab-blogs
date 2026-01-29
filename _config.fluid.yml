@@ -6,7 +6,7 @@ favicon: /img/favicon.ico
 
 navbar:
   # Empty uses site title from _config.yml
-  blog_title: "Linfeng's AI Lab"
+  blog_title: "Linfeng's Lab"
   menu:
     - { key: "home", name: "Home", link: "/", icon: "iconfont icon-home-fill" }
     - { key: "archive", name: "Archives", link: "/archives/", icon: "iconfont icon-archive-fill" }
