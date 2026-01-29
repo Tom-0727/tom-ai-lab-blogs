@@ -6,7 +6,7 @@ favicon: /img/favicon.ico
 
 navbar:
   # Empty uses site title from _config.yml
-  blog_title: "Tom's AI Lab"
+  blog_title: "Linfeng's AI Lab"
   menu:
     - { key: "home", name: "Home", link: "/", icon: "iconfont icon-home-fill" }
     - { key: "archive", name: "Archives", link: "/archives/", icon: "iconfont icon-archive-fill" }
@@ -88,7 +88,7 @@ about:
   banner_img_height: 80
   banner_mask_alpha: 0.3
   avatar: /img/tom-avatar-320.jpg
-  name: "Tom"
+  name: "Linfeng"
   intro: "我正在构建一支 AI 员工团队"
   icons:
     - { class: "fab fa-github", link: "https://github.com/Tom-0727", tip: "GitHub" }
@@ -96,7 +96,7 @@ about:
     - { class: "fab fa-twitter", link: "https://x.com/TomTheBig77", tip: "Twitter" }
 
 footer:
-  content: "copyright @ 2026 Tom"
+  content: "copyright @ 2026 Linfeng"
   statistics:
     enable: true
     source: "busuanzi"
