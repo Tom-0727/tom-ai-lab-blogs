@@ -18,7 +18,7 @@
 
 # 用于浏览器标签的图标
 # Icon for browser tab
-favicon: /img/fluid.png
+favicon: /favicon.ico
 
 # 用于苹果设备的图标
 # Icon for Apple touch
@@ -1032,19 +1032,19 @@ links:
       title: "Fluid Blog",
       intro: "主题博客",
       link: "https://hexo.fluid-dev.com/",
-      avatar: "/img/favicon.png"
+      avatar: "/favicon.ico"
     }
     - {
       title: "Fluid Docs",
       intro: "主题使用指南",
       link: "https://hexo.fluid-dev.com/docs/",
-      avatar: "/img/favicon.png"
+      avatar: "/favicon.ico"
     }
     - {
       title: "Fluid Repo",
       intro: "主题 GitHub 仓库",
       link: "https://github.com/fluid-dev/hexo-theme-fluid",
-      avatar: "/img/favicon.png"
+      avatar: "/favicon.ico"
     }
 
   # 当成员头像加载失败时，替换为指定图片

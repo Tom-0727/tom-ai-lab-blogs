@@ -2,7 +2,7 @@
 # Keep site-level settings in _config.yml, only put theme options here.
 # Guide: https://hexo.fluid-dev.com/docs/guide/
 
-favicon: /img/favicon.ico
+favicon: /favicon.ico
 
 navbar:
   # Empty uses site title from _config.yml
