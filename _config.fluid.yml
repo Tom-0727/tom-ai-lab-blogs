@@ -3,6 +3,7 @@
 # Guide: https://hexo.fluid-dev.com/docs/guide/
 
 favicon: /favicon.ico
+apple_touch_icon: /favicon.ico
 
 navbar:
   # Empty uses site title from _config.yml
