@@ -95,9 +95,9 @@ about:
   name: "Linfeng Liu"
   intro: "我正在构建一支 AI 员工团队"
   icons:
-    - { class: "fab fa-github", link: "https://github.com/Tom-0727", tip: "GitHub" }
-    - { class: "fas fa-envelope", link: "mailto:2594511615@qq.com", tip: "Email" }
-    - { class: "fab fa-twitter", link: "https://x.com/TomTheBig77", tip: "Twitter" }
+    - { class: "iconfont icon-github-fill", link: "https://github.com/Tom-0727", tip: "GitHub" }
+    - { class: "iconfont icon-mail", link: "mailto:2594511615@qq.com", tip: "Email: 2594511615@qq.com" }
+    - { class: "iconfont icon-twitter-fill", link: "https://x.com/TomTheBig77", tip: "Twitter" }
 
 footer:
   content: "copyright @ 2026 Linfeng"
