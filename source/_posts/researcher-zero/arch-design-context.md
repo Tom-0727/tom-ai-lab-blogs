@@ -5,7 +5,7 @@ tags: researcher-zero-arch-design
 categories: [ResearcherZero]
 ---
 ## Introduction
-我将一个 Agent 的实现简单地分为 Context，Memory，Learning，Reasoning 四大块。
+经过多个Agent项目的算法设计实践，我将一个 Agent 的实现简单地分为 Context，Memory，Learning，Reasoning 四大块。
 - **Context**: Context 不是工程意义上的输入参数，而是一个智能体在某一刻“作为某种身份**存在**”的处境。就像一个工人之所以是工人，不仅是因为他脑中存了多少知识，而是因为他此刻站在工地上，手里拿着工具，面前有明确的任务与约束 —— 这构成了他的“当下状态”。例如，一个 Agent 被定义为文本核查员，那么它的 Context 除了模型的参数以外，还有它此刻所处的工作场景：这段文本、需要核对的目标、以及当前进度。这些共同构成了它作为“核查员”这一身份的当下处境。
 - **Memory**: 让这种处境(Context)可以跨时间延续。人类工人会记得昨天做到哪一步、哪些规则重要，Agent 也需要记忆系统来进行状态的存储，更新，和读取。
 - **Learning**: 身份在时间中的成长。Agent 会通过反馈或学习不断调整和更新自己的 Context。
