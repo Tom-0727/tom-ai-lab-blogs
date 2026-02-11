@@ -85,6 +85,10 @@ post:
   comments:
     enable: true
     type: giscus
+    post:
+  updated:
+    enable: true
+    relative: true
 
 about:
   enable: true
