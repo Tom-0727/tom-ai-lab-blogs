@@ -1,7 +1,7 @@
 ---
 title: ResearcherZero 架构设计 -- Memory
 date: 2026-02-11 23:07:27
-updated: 2026-02-11 23:07:27
+updated: 2026-02-12 23:07:27
 tags: researcher-zero-arch-design
 categories: [ResearcherZero]
 ---
