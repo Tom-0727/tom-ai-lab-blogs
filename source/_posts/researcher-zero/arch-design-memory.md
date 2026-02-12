@@ -50,7 +50,7 @@ categories: [ResearcherZero]
 ├── Cognition (认知层)
 │   ├── main_challenge.md   # 核心挑战：当前领域未解决的问题
 │   └── network.md          # 关系网络：梳理概念间的关联与演化脉络
-├── Atomic_Knowledge (原子知识层)[但我在实现的时候应该不会特地划分四个文件夹，而是用tag区分]
+├── Atomic_Knowledge (原子知识层)[但我在实现的时候应该不会特地划分四个文件夹，而是用 YAML Frontmatter 里的tag区分]
 │   ├── methods/            # 具体算法与论文
 │   ├── benchmarks/         # 评测指标 (反映当前的挑战)
 │   ├── surveys/            # 综述与思想 (专家分类方法/Abstract哲学)
@@ -61,7 +61,7 @@ categories: [ResearcherZero]
 
 1. <u>基本语境层</u>：这个研究领域是什么，大概长什么样。`basic_info.md` 提供了最基础的定义，而 `taxonomy.md` 则凝练一个分类设计。这确保了 ResearcherZero 即使在没有具体知识时，也能知道自己不知道什么，并能准确地定位知识的坐标。注意，这里 `taxonomy.md` 的层级设计不用再重蹈 GraphMemory 的覆辙，是任意格式的文本都行，只要能清晰表达 Category 和 Concept 即可。
 2. <u>认知层</u>：进行理解、判断、推理、决策与规划的心理知识。`main_challenge.md` 记录了该领域的核心难题，`network.md` 则记录了概念之间的流转关系。这一层赋予了 ResearcherZero “研究品味”，使其能判断哪些工作是有价值的，哪些是过时的，也赋予了 ResearcherZero 知识联系的深度。
-3. <u>原子知识层</u>：这个研究领域的知识块。通过 Tag（如 survey, method, benchmark, blog）、Category 和 Concept 进行聚类。
+3. <u>原子知识层</u>：这个研究领域的知识块。通过 YAML Frontmatter 中的 Tag（如 survey, method, benchmark, blog）、Category 和 Concept 进行聚类。
     - 对于 Survey，不仅记录内容，更着重提取其设计哲学，因为这往往代表了该领域的高层认知。
     - 对于 Benchmark，不仅是量化数字，更着重提取其反应的当前领域的挑战。
 4. <u>价值对齐层</u>：`human_preference.md` 作为一个独立模块，显式地记录了个人的偏好。
@@ -76,8 +76,9 @@ categories: [ResearcherZero]
 #### Memory的管理(非MVP版本实现)
 > 如何更新和遗忘？
 
-暂时的设想有：
-- 更新机制：human in the loop 介入要求更新某些地方/反馈错误或out of date触发/...
+- 更新机制：
+    1. ResearcherZero 在 **Learning** 过程中更新记忆。
+    2. **human in the loop** 介入要求更新某些地方/反馈错误或out of date触发/...
 - 遗忘机制：类似突触的机制，触发越多排序越好，触发越少，随时间或topk机制就被遗忘
 
 ## Conclusion
