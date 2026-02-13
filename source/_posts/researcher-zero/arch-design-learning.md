@@ -21,15 +21,15 @@ categories: [ResearcherZero]
 
 另外，Research 是一个长程任务，如果一开始就把路径锁定，将会有数不尽的边缘情况找上门，比如有些领域没有 Survey，有些领域很特殊，和常规的学习路径不一样，原来定义的学习路径就会失效。长程任务下，想让 Agent 完美遵循难，调优更难。
 
-基于上述的现实情况，我会在这里选择克制全自动，转向更多的 Human in the loop，也就是说 ResearcherZero 的学习过程将高度和人类合作。我的**具体设计**就是：人类来提出学习路径的指导（输入学习任务），Agent针对学习任务进行学习，在学习的过程中更新自己的 Context。
+基于上述的现实情况，我会在这里选择克制全自动，转向更多的 Human in the loop，也就是说 ResearcherZero 的学习过程将高度和人类合作。具体来说，我的**设计理念**就是：人类来提出学习路径的指导（输入学习任务），Agent针对学习任务进行学习，在学习的过程中更新自己的 Context。
 
 ### ResearcherZero 对具体学习任务的学习机制
 > 当人类提出一个具体的学习任务后，ResearcherZero如何进行学习？
 
 #### 运转机制
-整体来讲，我的设计是：Human in the loop + Plan&Execute + React
-- **Human in the loop**：人类下达阶段性的学习任务
-- **Plan&Execute**：ResearcherZero接收到学习任务先进行拆解，变成更独立，具体，简单的小任务，比如输入是“接下来请学习 Agent Memory 的 Benchmarks”，它可能拆解成 [1. 搜索 Agent Memory Benchmark，并找到最相关的5篇论文；2. 根据搜索结果继续安排学习计划]。然后直接进行 Execute，按照解析后的 Plan 顺序执行。
+整体来讲，ResearcherZero的进行学习时的运转设计是：Human in the loop + Plan&Execute + React
+- **Human in the loop**：人类下达阶段性学习任务
+- **Plan&Execute**：ResearcherZero接收到学习任务，进行拆解，变成更独立，具体，简单的小任务，比如输入是“接下来请学习 Agent Memory 的 Benchmarks”，它可能拆解成 [1. 搜索 Agent Memory Benchmark，并找到最相关的5篇论文；2. 根据搜索结果继续安排学习计划]。然后直接进行 Execute，按照解析后的 Plan 顺序执行。
 - **React**：上一步Execute进入第一个Step，然后进行React式地执行，经过多轮搜索后找齐了5篇论文，这时候会发现第二步是需要第一步信息的，怎么办？这时候就要他具有规划能力，它根据情况将计划改写成 [1. ..., 2. 阅读xxx，3. 阅读yyy, ...]，然后继续下一个Step的React。
     - 这里我做了一个比较有意思的设计，就是每个React得到结束标志时，会触发一次总结，然后将这个React的对话全部压缩成一个message，形成一种上下文动态压缩的机制
 
