@@ -1,15 +1,15 @@
 ---
 title: ResearcherZero 架构设计 -- Context
 date: 2026-02-01 10:13:27
-updated: 2026-02-11 23:07:27
+updated: 2026-02-13 09:07:27
 tags: researcher-zero-arch-design
 categories: [ResearcherZero]
 ---
 ## Introduction
 经过多个Agent项目的算法设计实践，我认为一个 Agent 的设计可以用 Context，Memory，Learning，Reasoning 这样的框架去展开思考。
-- **Context**: [Context Engineering](https://platform.claude.com/docs/en/build-with-claude/context-windows) 是25年非常热门的一个词，大多数开发者将其认为是一种工程优化思路，但我想从更抽象一层去定义的 Context，它不是工程意义上的输入参数，而是一个 AI 生命体在某一刻“作为某种身份**存在**”的处境。就像一个工人之所以是工人，不仅是因为他脑中存了多少知识，而是因为他此刻站在工地上，手里拿着工具，面前有明确的任务与约束 —— 这构成了他的“当下状态”。
-- **Memory**: 让这种处境(Context)可以跨时间延续。人类工人会记得昨天做到哪一步、哪些规则重要，Agent 也需要记忆系统来进行状态的存储，更新，和读取。
-- **Learning**: 身份在时间中的成长。Agent 会通过反馈或学习不断调整和更新自己的 Context。
+- **[Context](/2026/02/01/researcher-zero/arch-design-context/)**: 在25年随着 Andrej Karpathy 多次提到 [Context Engineering](https://platform.claude.com/docs/en/build-with-claude/context-windows) 这个概念，这个词变得非常热门，而大多数开发者将其认为是一种工程优化思路，但我想从更抽象一层去定义的 Context，它不是工程意义上的输入参数，而是一个 AI 生命体在某一刻“作为某种身份**存在**”的处境。就像一个工人之所以是工人，不仅是因为他脑中存了多少知识，而是因为他此刻站在工地上，手里拿着工具，面前有明确的任务与约束 —— 这构成了他的“当下状态”。
+- **[Memory](/2026/02/11/researcher-zero/arch-design-memory/)**: 让这种存在(Context)可以跨时间延续。人类工人会记得昨天做到哪一步、哪些规则重要，Agent 也需要记忆系统来进行状态的存储，更新，和读取。
+- **[Learning](/2026/02/13/researcher-zero/arch-design-learning/)**: 一个 AI 生命体随着时间流逝而产生的成长。Agent 会通过反馈或学习不断调整和更新自己的 Context。
 - **Reasoning**: 如何消费 Context。
 
 本篇文章介绍 ResearcherZero 的 Context 设计。
