@@ -1,7 +1,7 @@
 ---
 title: ResearcherZero 架构设计 -- Learning
 date: 2026-02-13 09:07:27
-updated: 2026-02-13 09:07:27
+updated: 2026-02-20 15:07:27
 tags: researcher-zero-arch-design
 categories: [ResearcherZero]
 ---
@@ -40,13 +40,15 @@ categories: [ResearcherZero]
 4. <u>上下文更好管理</u>：因为 Plan&Execute+React，将过程信息天然以Step级别划分，从而天然适合进行上下文压缩，整个运行过程的每个Step都能在一个相对舒适的上下文长度下进行，相比那种滑动窗口（前面的Step在舒适的上下文空间，后面的Step实则在逐渐窒息的上下文空间）
 
 #### 原子能力设计
-根据上述的运转机制，一个最小可行的 AI Researcher 需要以下三种原子能力：
+根据上述的运转机制，一个最小可行的 AI Researcher 需要以下四种原子能力：
 - **规划能力**：制定计划，修改计划的能力
-    - *实现设计*：靠规则化输出解析
 - **搜索能力**：搜索学习资料的能力
     - *实现设计*：1. 学术搜索（调研后确定用[Semantic Scholar API](https://www.semanticscholar.org/product/api)，极少数的支持语义搜索论文的API）；2. 通用搜索（调研后确定用[Tavily](https://app.tavily.com)，结合Google，Bing等搜索源，稳定，每个月有1000免费积分）
-- **读写能力**：读写文件系统的能力
+- **文件操作**：读写文件系统的能力
     - *实现设计*：定义：在一个工作区间内，能读取文件，生成文件，并编辑文件的能力。在调研了 [OpenHands](https://github.com/OpenHands/OpenHands)，[OpenInterpreter](https://github.com/openinterpreter/open-interpreter)，[Aider](https://github.com/Aider-AI/aider) 三个工作后，我决定从 Aider 抽取小工具包出来（其实都行）。简单来讲，Aider的关键不在于给模型文件读写权限，而在于把模型从执行者降级为“变更意图生成器”：模型只产出结构化编辑描述（如 SEARCH/REPLACE、unified diff、patch actions），真正的读写由本地引擎负责。这个引擎是分层设计的：P0 先解决文件系统确定性（编辑，异常处理，重试与路径边界）；P1 在局部编辑阶段引入渐进式匹配与容错（精确匹配优先->缩进/上下文差异回退->多策略搜索替换），提高模型输出在真实文件内容漂移情况下的应用成功率；P2 则把修改提升为可验证的动作语义，通过上下文定位与冲突检测实现更强的一致性和可审计性。但是我这里就只达到部分P1能力的文件系统操作能力即可。
+- **阅读能力**：阅读各种类型资料的能力，比如网页，pdf等
+
+这些能力都将以skills的形式供给给Agent，它将用 skill meta toolkit 去渐进式加载和使用这些能力。
 
 ## Conclusion
 总的来说，ResearcherZero 的 Learning 模块并没有追求那种听起来很酷的“全自动进化”，而是选择了一条更务实的路线：通过 Human-in-the-loop 配合 Plan&Execute + React 的架构，让 Agent 的学习过程变得可控、可调试。这种设计不仅避免了长程任务中常见的「跑偏」问题，更关键的是解决了“抽象之梯”带来的认知断层 —— 确保 Agent 学进脑子里的东西（Context 的更新），是人类真正需要且能理解的。
