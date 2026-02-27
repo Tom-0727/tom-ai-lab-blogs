@@ -78,6 +78,18 @@ tag:
   banner_img_height: 60
   banner_mask_alpha: 0.3
 
+page:
+  banner_img: /img/blog-background.webp
+  banner_img_height: 60
+  banner_mask_alpha: 0.3
+
+page404:
+  enable: true
+  banner_img: /img/blog-background.webp
+  banner_img_height: 85
+  banner_mask_alpha: 0.3
+  redirect_delay: 5000
+
 post:
   banner_img: /img/blog-background.webp
   banner_img_height: 60
@@ -123,3 +135,6 @@ giscus:
   emit-metadata: 0
   input-position: bottom
   lang: zh-CN
+
+canonical:
+  enable: true

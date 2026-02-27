@@ -36,7 +36,7 @@ categories: [ResearcherZero]
 #### Memory的存储
 > 既然放弃了图数据库，那么 ResearcherZero 的大脑文件系统长什么样？
 
-我将 Memory 的存储设计为一个多层级的文件系统，其具体设计与 [Context 设计](/researcher-zero/arch-design-context/) 保持高度对齐。
+我将 Memory 的存储设计为一个多层级的文件系统，其具体设计与 [Context 设计](/2026/02/01/researcher-zero/arch-design-context/) 保持高度对齐。
 
 类似于 Claude 的 **Skills** 概念，我将每一个研究领域视为一个独立的文件夹。当 ResearcherZero 切换研究任务时，本质上是在切换不同的领域文件夹，从而加载不同的 Context。
 

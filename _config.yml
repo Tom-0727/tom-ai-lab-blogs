@@ -6,7 +6,7 @@
 title: Linfeng (Tom) Liu - AI Agent Engineer
 subtitle: 'Building My Digital Workforce'
 description: 'The personal AI Lab of Linfeng Liu (Tom). A log ofbuilding AI employees to solve real-world research and engineering problems. Exploring Agent Memory, Cognition, and Human-AI collaboration.'
-keywords: AI Agent, LLM, ResearcherZero, Artificial Intelligence, Personal Knowledge Management, Self-Evolving Agent
+keywords: AI Agent, LLM, ResearcherZero, Researcher-Zero, Researcher Zero, Artificial Intelligence, Personal Knowledge Management, Self-Evolving Agent
 author: Linfeng (Tom) Liu
 language: en
 timezone: 'Asia/Shanghai'
@@ -29,6 +29,7 @@ category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
 skip_render:
+  - googleb2237a40245298eb.html
 
 # Writing
 new_post_name: :title.md # File name of new posts
@@ -102,3 +103,8 @@ theme: fluid
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: ''
+
+# Sitemap
+## Docs: https://github.com/hexojs/hexo-generator-sitemap
+sitemap:
+  path: sitemap.xml
