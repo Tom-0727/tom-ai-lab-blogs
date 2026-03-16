@@ -47,7 +47,6 @@ LLM 会根据我的偏好进行筛选。比如我设置了「关注 AI Agent、L
 
 技术栈很轻量：
 
-- **Python 3.13+** — 现代 Python 特性
 - **LangGraph** — 构建 Agent 工作流
 - **LangChain + OpenAI** — LLM 调用
 - **飞书/钉钉 Webhook** — 消息推送
