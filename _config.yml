@@ -108,3 +108,28 @@ deploy:
 ## Docs: https://github.com/hexojs/hexo-generator-sitemap
 sitemap:
   path: sitemap.xml
+
+# Robotstxt
+## Docs: https://github.com/hexojs/hexo-generator-robotstxt
+robotstxt:
+  useragent: "*"
+  allow:
+    - /
+  disallow:
+    - /archives/
+    - /categories/
+    - /tags/
+    - /404.html
+  sitemap: https://www.tom-blogs.top/sitemap.xml
+
+# Feed
+## Docs: https://github.com/hexojs/hexo-generator-feed
+feed:
+  type: atom
+  path: atom.xml
+  limit: 20
+  hub:
+  content: true
+  content_limit: 140
+  content_limit_delim: ' '
+  order_by: -date
