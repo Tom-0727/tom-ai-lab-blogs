@@ -138,3 +138,9 @@ giscus:
 
 canonical:
   enable: true
+
+open_graph:
+  enable: true
+  twitter_card: summary_large_image
+  twitter_id: TomTheBig77
+  twitter_site: TomTheBig77
