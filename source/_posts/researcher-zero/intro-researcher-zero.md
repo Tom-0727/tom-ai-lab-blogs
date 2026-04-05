@@ -2,8 +2,9 @@
 title: 保持前沿太花时间了，所以我需要 ResearcherZero
 date: 2026-01-29 21:13:27
 updated: 2026-02-11 21:07:27
-tags: Intro
+tags: [researcher-zero, intro, agent-architecture]
 categories: [ResearcherZero]
+description: "ResearcherZero 项目介绍：一个具备持续学习能力的 AI 研究员，通过构建领域认知图谱解决研究者的信息焦虑问题，让每一次交互都站在深度积累之上，区别于传统一次性搜索型 Agent。"
 ---
 ## 背景
 研究者，或者任何对前沿AGI技术感兴趣的人，总是会有信息困境，通常他们为了追踪或具有领域前沿的理解而花大量的时间处理信息

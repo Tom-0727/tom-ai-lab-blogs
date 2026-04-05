@@ -2,8 +2,9 @@
 title: ResearcherZero V0 发布 —— 一个陪你一起学习的 AI 研究员
 date: 2026-03-01 12:00:00
 updated: 2026-03-01 12:00:00
-tags: Release
+tags: [researcher-zero, release, claude-code]
 categories: [ResearcherZero]
+description: "ResearcherZero V0 正式发布，一个住在 Claude Code 里的 AI 研究员，能持续学习你感兴趣的领域、结构化存储认知、从已有积累出发回答问题，解决研究者在信息过载与信息焦虑间反复横跳的困境。"
 ---
 
 ## 信息焦虑

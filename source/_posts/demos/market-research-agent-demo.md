@@ -1,8 +1,9 @@
 ---
 title: Market Research Agent Demo
 date: 2026-01-27 21:12:15
-tags: 
+tags: [demo, agent-engineering]
 categories: [Demo]
+description: "AI Agent 自动完成的市场调研 Demo，以智能猫用产品为例，分析全球及中国市场规模、增长驱动因素与利基机会，展示 Agent 在高客单价细分市场研究中的实际应用效果。"
 ---
 # 智能猫用产品利基市场探索：高客单价与低竞争机会分析
 

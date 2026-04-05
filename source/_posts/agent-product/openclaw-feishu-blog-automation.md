@@ -2,8 +2,9 @@
 title: 用 OpenClaw + 飞书打造 AI-Native 博客运营系统
 date: 2026-03-15 21:05:00
 updated: 2026-03-15 21:05:00
-tags: OpenClaw, Feishu, Automation, Agent
-categories: [Agent Engineering]
+tags: [agent-product, automation, ai-tools]
+categories: [Agent Product]
+description: "用 OpenClaw AI Agent 托管平台搭配飞书，打造一套 AI-Native 博客运营系统，覆盖信息监控、内容管理、数据汇总和读者互动，让创作者只需专注写作本身，其余交给 AI 自动化处理。"
 ---
 
 ## 背景

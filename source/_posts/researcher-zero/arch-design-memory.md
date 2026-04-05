@@ -2,8 +2,9 @@
 title: ResearcherZero 架构设计 -- Memory
 date: 2026-02-11 23:07:27
 updated: 2026-02-13 09:07:27
-tags: researcher-zero-arch-design
+tags: [researcher-zero, arch-design, memory, agent-architecture]
 categories: [ResearcherZero]
+description: "ResearcherZero 的 Memory 架构设计，从 GraphMemory 的实践踩坑出发，转向 Markdown 文件系统方案，将记忆拆解为存储、更新、读取三个过程，实现对人类友好且支持渐进式加载的 Agent 记忆系统。"
 ---
 ## Introduction
 经过多个Agent项目的算法设计实践，我认为一个 Agent 的设计可以用 Context，Memory，Learning，Reasoning 这样的框架去展开思考。

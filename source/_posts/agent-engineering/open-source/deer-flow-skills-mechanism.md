@@ -2,8 +2,9 @@
 title: DeerFlow 的 Skills 实现机制
 date: 2026-02-27 21:07:27
 updated: 2026-02-27 21:07:27
-tags: [agent-engineering, mechanism-interpret]
-categories: [Agent Engineering, Mechanism Interpret]
+tags: [agent-engineering, mechanism-interpret, skills, open-source]
+categories: [Agent Engineering]
+description: "代码级拆解字节跳动 DeerFlow 的 Skills 运作机制，涵盖 Skill 元数据注入、SKILL.md 读取、沙箱执行等五层架构，帮助开发者自己实现一套可插拔的 Agent Skill 系统。"
 ---
 # DeerFlow Skills 运作机制（代码级拆解）
 最近想自己实现一个支持 Skills 的 Agent 系统，于是阅读了 [DeerFlow](https://github.com/bytedance/deer-flow) 的实现，在此沉淀一篇运作机制说明。

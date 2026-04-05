@@ -2,8 +2,9 @@
 title: "ResearcherZero 实现方案 -- 把 Claude Code 变成 AI 研究员"
 date: 2026-02-28 23:07:27
 updated: 2026-02-28 23:07:27
-tags: researcher-zero-arch-design
+tags: [researcher-zero, arch-design, claude-code, agent-architecture]
 categories: [ResearcherZero]
+description: "ResearcherZero 的工程实现方案：放弃自建 Agent 框架，完全接纳 Claude Code 的 model-driven agentic loop，通过注入研究者灵魂而非对抗底层机制，把 Claude Code 变成一个真正的 AI 研究员。"
 ---
 
 # ResearcherZero 实现方案 -- 把 Claude Code 变成 AI 研究员

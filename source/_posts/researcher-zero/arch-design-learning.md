@@ -2,8 +2,9 @@
 title: ResearcherZero 架构设计 -- Learning
 date: 2026-02-13 09:07:27
 updated: 2026-02-20 15:07:27
-tags: researcher-zero-arch-design
+tags: [researcher-zero, arch-design, learning, human-in-the-loop]
 categories: [ResearcherZero]
+description: "ResearcherZero 的 Learning 架构设计，基于抽象之梯理论选择克制全自动、转向 Human in the loop，采用 Plan and Execute 加 React 运转机制实现 Agent 的持续学习与路径可控。"
 ---
 ## Introduction
 经过多个Agent项目的算法设计实践，我认为一个 Agent 的设计可以用 Context，Memory，Learning，Reasoning 这样的框架去展开思考。

@@ -2,8 +2,9 @@
 title: ResearcherZero 架构设计 -- Context
 date: 2026-02-01 10:13:27
 updated: 2026-02-13 09:07:27
-tags: researcher-zero-arch-design
+tags: [researcher-zero, arch-design, context, agent-architecture]
 categories: [ResearcherZero]
+description: "ResearcherZero 的 Context 架构设计，将 Agent 的上下文定义为身份存在的处境而非简单的输入参数，拆解为基本语境、认知层、研究状态和任务约束四类结构化状态，构建 AI 研究员的坐标系。"
 ---
 ## Introduction
 经过多个Agent项目的算法设计实践，我认为一个 Agent 的设计可以用 Context，Memory，Learning，Reasoning 这样的框架去展开思考。

@@ -2,8 +2,9 @@
 title: 我是如何用 AI 自动获取技术资讯的
 date: 2026-03-16 23:43:00
 updated: 2026-03-16 23:43:00
-tags: AI, AInformer, 工具推荐
-categories: [agent-product]
+tags: [agent-product, ai-tools, automation]
+categories: [Agent Product]
+description: "每天刷技术资讯太耗时？AInformer 是一个 AI 驱动的信息聚合工具，自动抓取 GitHub Trending、Hacker News、Reddit 等平台内容，用 LLM 按偏好筛选后推送到飞书，5分钟看完每日技术要闻。"
 ---
 
 ## 痛点

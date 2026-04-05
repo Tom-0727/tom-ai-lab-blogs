@@ -1,8 +1,9 @@
 ---
 title: DeepResearch Agent Demo
 date: 2026-01-09 22:12:21
-tags: 
+tags: [demo, agent-product]
 categories: [Demo]
+description: "一份由 AI Agent 自动生成的深度调研报告，全面解析 AI Employee 产品赛道的概念定义、市场规模预测、主流产品盘点、应用场景与商业模式，展示 DeepResearch Agent 的落地能力。"
 ---
 # 深度调研：AI Employee产品、应用场景与商业模式全解析
 
