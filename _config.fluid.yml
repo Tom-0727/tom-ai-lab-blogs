@@ -136,5 +136,11 @@ giscus:
   input-position: bottom
   lang: zh-CN
 
+web_analytics:
+  enable: true
+  follow_dnt: true
+  google:
+    measurement_id: G-6D1EK1NGE0
+
 canonical:
   enable: true
