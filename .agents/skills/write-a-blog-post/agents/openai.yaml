@@ -1,0 +1,4 @@
+interface:
+  display_name: "Write a Blog Post"
+  short_description: "Collaborate on a blog post from idea to publishing"
+  default_prompt: "Use $write-a-blog-post to turn my idea into a blog post and publish it after my approval."
