@@ -142,5 +142,8 @@ web_analytics:
   google:
     measurement_id: G-6D1EK1NGE0
 
+open_graph:
+  site_name: "Linfeng's Lab"
+
 canonical:
   enable: true

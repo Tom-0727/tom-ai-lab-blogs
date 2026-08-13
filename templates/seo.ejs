@@ -1,0 +1,41 @@
+<%
+const siteUrl = config.url.replace(/\/$/, '');
+const personId = `${siteUrl}/about/#person`;
+let structuredData;
+
+if (page.path === 'index.html') {
+  structuredData = {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    '@id': `${siteUrl}/#website`,
+    name: "Linfeng's Lab",
+    url: `${siteUrl}/`,
+    description: config.description,
+    author: {
+      '@id': personId
+    }
+  };
+} else if (page.path === 'about/index.html') {
+  structuredData = {
+    '@context': 'https://schema.org',
+    '@type': 'ProfilePage',
+    '@id': `${siteUrl}/about/#profile-page`,
+    url: `${siteUrl}/about/`,
+    mainEntity: {
+      '@type': 'Person',
+      '@id': personId,
+      name: config.author,
+      url: `${siteUrl}/about/`,
+      image: `${siteUrl}/img/tom-avatar-320.jpg`,
+      description: config.description,
+      sameAs: [
+        'https://github.com/Tom-0727',
+        'https://x.com/TomTheBig77'
+      ]
+    }
+  };
+}
+%>
+<% if (structuredData) { %>
+<script type="application/ld+json"><%- JSON.stringify(structuredData) %></script>
+<% } %>

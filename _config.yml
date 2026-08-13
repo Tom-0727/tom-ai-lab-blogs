@@ -3,11 +3,11 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Linfeng (Tom) Liu - AI Agent Engineer
+title: Linfeng Liu - AI Agent Engineer
 subtitle: 'Building My Digital Workforce'
-description: 'Linfeng (Tom) Liu 的 AI 实验室。构建具备记忆、认知与持续学习能力的 AI 员工系统，探索 Agent 架构设计与人机协作的工程实践。'
+description: 'Linfeng Liu 的 AI 实验室。构建具备记忆、认知与持续学习能力的 AI 员工系统，探索 Agent 架构设计与人机协作的工程实践。'
 keywords: AI Agent, AI员工, Agent架构设计, LLM, ResearcherZero, Claude Code, Agent Memory, Agent工程, 人机协作, Human-AI Collaboration, Self-Evolving Agent
-author: Linfeng (Tom) Liu
+author: Linfeng Liu
 language: zh-CN
 timezone: 'Asia/Shanghai'
 
@@ -17,7 +17,7 @@ url: https://www.tom-blogs.top
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
-  trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
+  trailing_index: false # Set to false to remove trailing 'index.html' from permalinks
   trailing_html: true # Set to false to remove trailing '.html' from permalinks
 
 # Directory
