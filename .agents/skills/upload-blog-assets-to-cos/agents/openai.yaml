@@ -1,0 +1,4 @@
+interface:
+  display_name: "Upload Blog Assets to COS"
+  short_description: "Upload blog images to Tencent Cloud COS"
+  default_prompt: "Use $upload-blog-assets-to-cos to upload this blog image and return Markdown."
