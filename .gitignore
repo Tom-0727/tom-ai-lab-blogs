@@ -12,3 +12,4 @@ _multiconfig.yml
 !.env.example
 __pycache__/
 *.py[cod]
+.atectix/
